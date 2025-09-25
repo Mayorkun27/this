@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import Step1 from "../steps/Step1";
-import Step2 from "../steps/Step2";
-import Step3 from "../steps/Step3";
-import Step4 from "../steps/Step4";
-import Step5 from "../steps/Step5";
+import Step1 from "./registersteps/Step1";
+import Step2 from "./registersteps/Step2";
+import Step3 from "./registersteps/Step3";
+import Step4 from "./registersteps/Step4";
+import Step5 from "./registersteps/Step5";
 
 const steps = [
   "Initial Registration",
@@ -94,7 +94,7 @@ const Register = () => {
               >
                 <div
                   className={`flex items-center justify-center w-12 h-12 rounded-full border-2 absolute top-1/2 -translate-y-1/2
-                    ${isCompleted || isActive ? "border-primary text-primary bg-white" : "border-green-300 text-gray-500 bg-white"}
+                    ${isCompleted || isActive ? "border-primary text-primary bg-white" : "border-primary/40 text-gray-500 bg-white"}
                     ${index === 0 ? "left-0" : "-ml-6"}
                   `}
                 >
